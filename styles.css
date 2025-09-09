@@ -578,7 +578,7 @@ body {
   width: 48%;
   max-width: 100%;
   height: auto;
-  object-fit: cover;
+  /*object-fit: cover;*/
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
 }
@@ -704,5 +704,6 @@ body {
   font-size: 1.05rem;
   line-height: 1.8;
 }
+
 
 
