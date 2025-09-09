@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "Velkommen",
     "Willkommen",
     "Bienvenido",
+    "いらっしゃいませ",
     "Welcome",
     "환영합니다",
   ];
@@ -41,3 +42,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   typeGreeting();
 });
+
