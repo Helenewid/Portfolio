@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Helene Widlund</title>
+  <link rel="stylesheet" href="styles.css" />
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Helene Widlund</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="my-work.html">My Work</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="helene-cv.pdf" target="_blank">My CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTACT FORM -->
+  <section class="contact-page-section">
+    <div class="container contact-form-wrapper">
+      <h1>Want to work together?</h1>
+      <p>Send me a message and let's find out what we can make together!</p>
+
+      <form class="contact-form" action="https://formspree.io/f/xnnbbwly" method="post">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+
+        <input type="hidden" name="_subject" value="New message from portfolio contact form">
+        <input type="hidden" name="_next" value="thankyou.html">
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2025 Helene Widlund</p>
+      <div class="footer-links">
+        <a href="contact.html">Contact</a>
+        <a href="www.linkedin.com/in/helenewid" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <!-- Inline SVG Icon for LinkedIn -->
+        <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#4d4a2f" viewBox="0 0 24 24">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75 1.75.785 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.058-1.864-3.058-1.864 0-2.149 1.455-2.149 2.961v5.701h-3v-10h2.882v1.367h.041c.402-.762 1.381-1.564 2.841-1.564 3.039 0 3.6 2.002 3.6 4.605v5.592z"/>
+        </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
