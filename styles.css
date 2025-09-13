@@ -705,5 +705,242 @@ body {
   line-height: 1.8;
 }
 
+.project-personas {
+  background-color: #f8f5f1;
+  padding: 4rem 2rem;
+  color: #4d4a2f;
+}
+
+.project-personas .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.project-personas h2 {
+  font-size: 2rem;
+  font-family: 'Georgia', serif;
+  color: #5b562a;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.persona-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.persona-card {
+  background-color: #4d4a2f;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+
+.persona-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.persona-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #dfdede;
+}
+
+.persona-card p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #dfdede;
+}
+
+
+
+.prototype-gallery h2 {
+  font-size: 2rem;
+  font-family: 'Georgia', serif;
+  margin-bottom: 2rem;
+  color: #5b562a;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.gallery-grid.two-per-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.gallery-grid.two-per-row img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+
+.gallery-grid.two-per-row img:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive fallback */
+@media (max-width: 768px) {
+  .gallery-grid.two-per-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/*--------------------ABOUT ME-------------*/
+
+/* ===== RETRO PC STYLE ===== */
+.about-retro {
+  font-family: 'Courier New', monospace;
+  background-color: #eae2da;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+
+.retro-window {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  border: 3px solid #000;
+  box-shadow: 8px 8px 0 #888;
+}
+
+.retro-title-bar {
+  background-color: #5b562a;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+
+.window-buttons {
+  display: flex;
+  gap: 0.3rem;
+}
+
+
+.window-buttons .btn {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border: 1px solid #000;
+  box-shadow: 1px 1px 0 #000;
+}
+  
+
+.retro-tabs {
+  display: flex;
+  border-bottom: 2px solid #000;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 0.75rem;
+  background-color: #ccc;
+  border: none;
+  border-right: 2px solid #000;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Courier New', monospace;
+}
+
+.tab-button:last-child {
+  border-right: none;
+}
+
+.tab-button.active {
+  background-color: #fff;
+  border-bottom: 2px solid transparent;
+}
+
+.retro-content {
+  padding: 2rem;
+  background-color: #fff;
+  border-top: none;
+}
+
+.retro-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.retro-content p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.professional-columns {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.professional-columns .column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.professional-columns h3 {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.professional-columns p {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.professional-columns ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.professional-columns li {
+  margin-bottom: 0.5rem;
+}
+
+.personal-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.personal-text {
+  flex: 1 1 55%;
+  min-width: 280px;
+}
+
+.personal-image {
+  flex: 1 1 40%;
+  min-width: 250px;
+  max-width: 350px;
+}
+
+.personal-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+
+
 
 
