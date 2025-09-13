@@ -43,3 +43,22 @@ document.addEventListener("DOMContentLoaded", () => {
   typeGreeting();
 });
 
+
+const tabButtons = document.querySelectorAll('.tab-button');
+const contentSections = document.querySelectorAll('.retro-content');
+
+tabButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Remove active from all tabs
+    tabButtons.forEach(b => b.classList.remove('active'));
+    // Hide all content sections
+    contentSections.forEach(section => section.style.display = 'none');
+
+    // Activate current
+    btn.classList.add('active');
+    const tabId = btn.dataset.tab;
+    document.getElementById(tabId).style.display = 'block';
+  });
+});
+
+
