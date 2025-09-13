@@ -129,6 +129,7 @@ body {
   background-color: #eae2da; /* Match background */
   padding: 1.5rem 2rem;
   border-bottom: 1px solid #ccc;
+  position: sticky;
 }
 
 .navbar {
@@ -939,6 +940,7 @@ body {
   height: auto;
   border-radius: 12px;
 }
+
 
 
 
