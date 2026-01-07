@@ -496,6 +496,7 @@ body {
 }
 
 
+
 /*----------------------GRAD PROJECT----------------------------*/
 .project-hero {
   margin-top: 4rem;
@@ -578,7 +579,7 @@ body {
   width: 48%;
   max-width: 100%;
   height: auto;
-  /*object-fit: cover;*/
+  object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
 }
@@ -705,6 +706,7 @@ body {
   line-height: 1.8;
 }
 
+
 .project-personas {
   background-color: #f8f5f1;
   padding: 4rem 2rem;
@@ -736,6 +738,7 @@ body {
   padding: 2rem;
   text-align: center;
   box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  padding: 2rem;
 }
 
 .persona-card img {
@@ -758,6 +761,29 @@ body {
   margin-bottom: 0.5rem;
   color: #dfdede;
 }
+
+/* ===== Vertical persona layout ===== */
+.persona-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Horizontal image pair inside persona */
+.persona-images-horizontal {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.persona-images-horizontal img {
+  width: 50%;
+  height: auto;              /* KEY: controls size */
+  object-fit: cover;          /* crops instead of stretching */
+  border-radius: 10px;
+}
+
+
 
 
 
@@ -941,8 +967,43 @@ body {
 }
 
 
+/* ===== Project video section ===== */
+.project-video {
+  padding: 4rem 2rem;
+  background-color: #f8f5f1;
+}
 
+.project-video h2 {
+  font-size: 2rem;
+  font-family: 'Georgia', serif;
+  color: #5b562a;
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
+.video-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+}
 
+.video-wrapper video,
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.video-caption {
+  max-width: 700px;
+  margin: 1.5rem auto 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.05rem;
+  color: #4d4a2f;
+}
 
 
